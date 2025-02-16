@@ -1,0 +1,34 @@
+:root {
+    --primary-color: #6366f1; 
+    --primary-hover-color: #4f46e5;
+    --background-color: #f8fafc;
+    --text-color: #1e293b;
+    --text-light-color: #64748b;
+    --border-color: #e2e8f0;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --white: #ffffff;
+  }
+  
+  .username-page {
+    min-height: 100vh;
+    background-color: var(--background-color);
+    padding: 2rem;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .username-page .header {
+    margin-bottom: 2rem;
+  }
+  
+  .username-page .header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .username-page .header p {
+    color: var(--text-light-color);
+    font-size: 1rem;
+  }
+  

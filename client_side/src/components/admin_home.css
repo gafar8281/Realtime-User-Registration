@@ -1,0 +1,215 @@
+:root {
+    --primary-color: #6366f1; 
+    --primary-hover-color: #4f46e5;
+    --background-color: #f8fafc;
+    --text-color: #1e293b;
+    --text-light-color: #64748b;
+    --border-color: #e2e8f0;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --error-color: #ef4444;
+    --error-hover-color: #dc2626;
+    --ok-color: #6119f3;
+    --white: #ffffff;
+  }
+  
+  .user-dashboard {
+    min-height: 100vh;
+    background-color: var(--background-color);
+    padding: 2rem;
+    font-family: 'Inter', sans-serif; 
+  }
+  
+  .header {
+    margin-bottom: 2rem;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .header p {
+    color: var(--text-light-color);
+    font-size: 1rem;
+  }
+  
+
+  .actions-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+    flex-wrap: wrap; 
+  }
+  
+  .search-container {
+    position: relative;
+    flex-grow: 1;
+    max-width: 400px;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-light-color);
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    color: var(--text-color);
+    background-color: var(--white);
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .search-input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+    outline: none;
+  }
+   
+
+  .users-table {
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    overflow: hidden;
+    width: 65%;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table-header {
+    background-color: var(--background-color);
+    /* width: 100%; */
+  }
+  
+  .table-header th {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-light-color);
+  }
+  
+  .table-row {
+    transition: background-color 0.3s;
+  }
+  
+  .table-row:hover {
+    background-color: var(--background-color);
+  }
+  
+  .table-cell {
+    padding: 1rem 1.5rem;
+    font-size: 0.875rem;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--error-color);
+    transition: color 0.3s, transform 0.2s;
+  }
+  
+  .delete-button:hover {
+    color: var(--error-hover-color);
+    transform: scale(1.1);
+  }
+  
+  .delete-button:active {
+    transform: scale(1);
+  }
+  .send-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--ok-color);
+    transition: color 0.3s, transform 0.2s;
+  }
+  
+  .send-button:hover {
+    color: var(--ok-color);
+    transform: scale(1.1);
+  }
+  
+  .send-button:active {
+    transform: scale(1);
+  }
+  
+  .empty-state {
+    text-align: center;
+    padding: 3rem 0;
+  }
+  
+  .empty-state p {
+    color: var(--text-light-color);
+    font-size: 1rem;
+  }
+
+  /* string reverse part */
+
+.reverse-string {
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    padding: 2rem;
+    /* margin: 2rem auto; */
+    margin-top: 50px;
+    max-width: 650px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .reverse-string .header-two h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .reverse-string .header-two p {
+    color: var(--text-light-color);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .reverse-string input[type="text"] {
+    width: 90%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    color: var(--text-color);
+    background-color: var(--white);
+    transition: border-color 0.3s, box-shadow 0.3s;
+    margin-top: 0.5rem;
+  }
+  
+  .reverse-string input[type="text"]:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+    outline: none;
+  }
+  
+  .reverse-string .header-two p:last-of-type {
+    font-weight: 500;
+    color: var(--text-color);
+    margin-top: 1.5rem;
+  }
+  

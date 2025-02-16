@@ -1,0 +1,114 @@
+
+:root {
+    --primary-color: #6366f1; 
+    --primary-hover-color: #4f46e5;
+    --background-color: #f8fafc;
+    --text-color: #1e293b;
+    --text-light-color: #64748b;
+    --border-color: #e2e8f0;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --error-color: #ef4444;
+    --white: #ffffff;
+  }
+  
+  .registration-form {
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 450px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .registration-form .header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .registration-form .header p {
+    color: var(--text-light-color);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input {
+    width: 92%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    color: var(--text-color);
+    background-color: var(--white);
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .form-group input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+    outline: none;
+  }
+  
+  .form-group input.error {
+    border-color: var(--error-color);
+  }
+  
+  .error-message {
+    color: var(--error-color);
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    display: block;
+  }
+  
+  .form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .submit-button,
+  .clear-button {
+    flex: 1;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .submit-button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+  }
+  
+  .submit-button:hover {
+    background-color: var(--primary-hover-color);
+    transform: translateY(-1px);
+  }
+  
+  .clear-button {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+  }
+  
+  .clear-button:hover {
+    background-color: var(--border-color);
+    transform: translateY(-1px);
+  }
